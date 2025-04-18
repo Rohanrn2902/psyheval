@@ -6,8 +6,8 @@ const CalmingVideosSlider = () => {
   useEffect(() => {
     const fetchVideos = async () => {
       try {
-        const apiKey = 'AIzaSyApVeK3cmd63M7u-bh1MCKm-UwXRHfoQec'; /*Add your own APIKey*/ 
-        const playlistId = 'PLQ_PIlf6OzqKdBTuABBCzazB4i732pNTa';
+        const apiKey = 'AIzaSyDrl6QXuhQUuSQrnfJBogL9_ST5xqPfuuI'; 
+        const playlistId = 'PL6Mvvu7LQp8KDQxjFroFUKtD85oDWoMbM';
         const maxResults = 20;
 
         const response = await fetch(
@@ -35,8 +35,8 @@ const CalmingVideosSlider = () => {
   }, []);
 
   return (
-    <div className="calming-videos-slider">
-      <h2>Calming Videos</h2>
+    <div className="Info-videos-slider">
+      <h2>Info Videos</h2>
       <div className="video-list">
         {videos.map(video => (
           <div key={video.id} className="video-card" data-title={video.title}>

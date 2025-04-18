@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Logoslider from '../components/Logoslider';
 import Home_info from '../components/Home_info';
-import img1 from '../images/homeimgnew-min.jpeg';
+import img1 from '../images/homeimgnew-min.png';
 
 
 const Home = () => {
@@ -25,14 +25,17 @@ const Home = () => {
       <div className='home-page'>
         <div className="helpline-container">
         <h3 className="marquee" style={{ color: 'crimson' }}>
-          Helpline Numbers under the Tele-MANAS Programme : ☎️ 14416 or 📞 1-800 891 4416
+          Helpline Number for mental health support :  📞 080 696 33333
         </h3>
       </div>
         <div className='home-allcontent'>
 
         <div className='home-project-intro-image'>
-          <img src={img1} alt='Sukoon: Embrace, Empower, Elevate' ></img>
-          
+          <img 
+            src={img1} 
+            alt='PsychEval: Embrace, Empower, Elevate' 
+            style={{ height: '700px' }} // Adjust the height to your desired value
+          />
         </div>
 
         <div className='home-project-intro-quote'>
@@ -51,7 +54,7 @@ const Home = () => {
          <div className='home-project-intro'>
         <p>
           We hope you enjoy our jokes as much as we do. 
-          Sukoon has many such resources to make you smile even when you feel you can't. We also offer a variety of other resources to help you 
+          PschEval has many such resources to make you smile even when you feel you can't. We also offer a variety of other resources to help you 
           understand yourself better. After all we all deserve to know what is going inside us. 
         </p>
         </div>

@@ -14,7 +14,7 @@ const ContactUs = () => {
 
     
     emailjs
-      .sendForm('service_j6fpbne', 'template_8qfw96m', e.target, 'ocD6sjKNO1COawjro')
+      .sendForm('service_rj0pg94', 'template_m0xww2s', e.target, 'U_o4TMqgU6rKHte8_')
       .then((result) => {
         alert('Email sent successfully:', result.text);
         setFormData({
@@ -46,19 +46,19 @@ const ContactUs = () => {
               <i className="fa fa-map-marker"></i>
             </a>
           </div>
-          <p>Jaypee Institute of Information Technology</p>
+          <p>Thadomal Shahani Engineering college</p>
         </div>
         <div className="address">
           <div className="icon">
             <i className="fa fa-phone"></i>
           </div>
-          <p>+91 xxxxxxxx67</p>
+          <p>+91 98542647451</p>
         </div>
         <div className="address">
           <div className="icon">
             <i className="fa fa-envelope"></i>
           </div>
-          <p>sukoon@gmail.com</p>
+          <p>rohannaik2902@gmail.com</p>
         </div>
         <div className="social-icons">
           <a href="#" className="icon">
@@ -67,7 +67,7 @@ const ContactUs = () => {
           <a href="#" className="icon">
             <i className="fa fa-twitter"></i>
           </a>
-          <a href="https://www.instagram.com/sukoonformentalhealth/" target="_blank" rel="noopener noreferrer" className="icon">
+          <a href="#"  className="icon">
             <i className="fa fa-instagram"></i>
           </a>
         </div>

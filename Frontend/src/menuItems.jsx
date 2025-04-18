@@ -60,7 +60,7 @@ const getMenuItems = () => {
       title: 'Contact',
       submenu: [
         {
-          title: 'About Us',
+          title: 'Consult',
           url: 'volunteer',
         },
         {

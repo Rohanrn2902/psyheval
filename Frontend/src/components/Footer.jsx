@@ -10,10 +10,10 @@ const Footer = () => {
           <a href="/Home">Home</a>
           <a href="Volunteer">About</a>
           <a href="Articles">Resources</a>
-          <a href="ContactUs">Contact</a>
+          <a href="ContactUs">Consult</a>
         </div>
         <div className="footer-copyright">
-          &copy; {currentYear} SUKOON. All rights reserved.
+          &copy; {currentYear} PYSCHEVAL. All rights reserved.
         </div>
       </div>
     </footer>

@@ -8,8 +8,8 @@ const contentData = [
   {
     imageSrc:
     image1,
-    title: "Who We Are",
-    text: "Discover more about our organization and learn about our mission and initiatives to make a positive impact on mental health and well-being.",
+    title: "Consult our Doctors",
+    text: "Join our dedicated team of mental health professionals committed to fostering well-being and transforming lives through compassionate care, innovative treatments, and a holistic approach to mental health.",
     link: "/Volunteer",
   },
   {
