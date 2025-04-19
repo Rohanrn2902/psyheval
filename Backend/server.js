@@ -1,6 +1,7 @@
 const express = require("express");
 const axios = require("axios");
 const cors = require("cors");
+const { fetchAllDocuments, readDocument } = require("./CRUD");
 
 const app = express();
 const PORT = process.env.PORT || 5004;
@@ -77,6 +78,16 @@ app.post("/api/generateMeme", async (req, res) => {
       .json({ error: "An error occurred while generating the meme." });
   }
 });
+
+app.post('/save-quiz', async(req, res) => {
+
+})
+
+app.get('/get-users', async(req, res) => {
+  const data = await readDocument('users', 'YO8se9dUHEMTYn7pit9YCsPWelH3')
+  console.log(data)
+  return res.status(200).send(data)
+})
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

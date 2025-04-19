@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import { signOut } from "firebase/auth";
-import { auth } from "./firebase-config";
+// import { signOut } from "firebase/auth";
+// import { auth } from "./firebase-config";
 import CreatePost from "../pages/CreatePost";
 import Login from "../pages/Login";
 import Blogs from "../pages/BlogsHome";
@@ -29,17 +29,18 @@ import DepressionQuiz from "../pages/DepressionQuiz";
 import OCDQuiz from "../pages/OcdQuiz";
 import ADHDQuiz from "../pages/ADHDQuiz";
 import SupportGroupsMain from "../pages/SupportGroupsMain";
+import Profile from "../pages/Profile";
 
 const App = () => {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
 
-  const signUserOut = () => {
-    signOut(auth).then(() => {
-      localStorage.clear();
-      setIsAuth(false);
-      window.location.pathname = "/login";
-    });
-  };
+  // const signUserOut = () => {
+  //   signOut(auth).then(() => {
+  //     localStorage.clear();
+  //     setIsAuth(false);
+  //     window.location.pathname = "/login";
+  //   });
+  // };
 
   return (
     <>
@@ -65,6 +66,7 @@ const App = () => {
           <Route path="adhd-quiz" element={<ADHDQuiz />} />
           <Route path="relax" element={<Relax />} />
           <Route path="memes" element={<Memes />} />
+          <Route path="profile" element = {<Profile />} />
          
 <Route path="volunteer" element={<Volunteer />} />
           <Route path="contact" element={<ContactUs />} />
